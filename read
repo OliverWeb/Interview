@@ -1,0 +1,35 @@
+垂直居中(块级):
+	margin:0 auto;
+	margin-top:高度;
+	或
+	固定定位和相对定位:
+	都是知道高度的情况下;
+1.单行文本:
+	让文本居中:line-height: ;
+2.图片居中:
+	设置父元素为display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+	行内的或图片;
+3.块级元素就是transform:translate(-50%,-50%);(移动端比较好)
+	利用top,left,right,bottom,都为零;margin:auto;
+4.浮动和绝对定位会使元素成块级元素;
+5.正则:search();可以匹配正则
+	index of(),只能是特定的值
+6.去掉前后的空格;
+		trim();
+7.createDocumentFragment();创建一个Dom片段;
+	createElement();   创建一个元素;      var html=$('<div></div>')
+	createTextNode();   创建文本的一个节点;
+	appendChild();      添加元素;        $('parent').append('child');或$('parent').prepend('child')
+																			$('').before();		$('').after(添加某元素);
+	
+	removeChild();     移去一个元素;     $('div').remove();  jq.empty;
+	replaceChild();     替换            new.replaceAll(old);
+	insertBefore();     在某元素之前进行添加;
+	document.querySelector();
+			
+			
+		
+	
+	

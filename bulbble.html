@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+<script>
+	var arr=[1,2,5,3,4];
+	/*首先比较前两个,两两相比较,,把最大的冒泡到最后变,然后在进行第二轮排列,在第一轮中已经得出的,就不用在进行比较了*/
+	Array.prototype.bubble=function(){
+		var max=0;
+		for(var r=0;r<arr.length;r++){
+			for(var c=0;c<arr.length-r;c++){
+				if(arr[c]>arr[c+1]){
+					max=arr[c];
+					arr[c]=arr[c+1];
+					arr[c+1]=max;
+				}
+			}
+		}
+		return arr;
+	};
+	arr.bubble();
+	console.log(arr);
+</script>
+</body>
+</html>

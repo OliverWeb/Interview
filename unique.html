@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>数组去重</title>
+</head>
+<body>
+<script>
+	var arr=[1,2,2,4,4,3];
+	Array.prototype.unique=function () {
+		var a=[];
+		for(var i=0;i<arr.length;i++){
+			if(a.indexOf(arr[i])==-1){
+				a.push(arr[i]);
+			}
+		}
+		return a;
+	};
+	console.log(arr.unique());
+	
+</script>
+</body>
+</html>
